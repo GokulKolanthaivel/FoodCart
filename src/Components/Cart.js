@@ -35,7 +35,7 @@ export default function Cart() {
             <div>
                 <Row className="cartMealRow">
                     <h5>Cart Items</h5>
-                    <Col className="cartOrderCol" xs={6} md={8} lg={8} xl={8}>
+                    <Col className="cartOrderCol" xs={12} md={8} lg={8} xl={8}>
                         {cartListData.length > 0 ? cartListData.map((item) => {
                             return (<>
                                 <Card className="cartMealCard">
@@ -48,7 +48,7 @@ export default function Cart() {
                                     </div>
                                     <div className="cartElementMargin cartIncBtn">
                                         <Button className="cartCounterBtn" onClick={() => { handelCartCountUpdate("Dec", item.title) }} >-</Button>
-                                        <Button className="cartCountervalue" >{item.count}</Button>
+                                        <Button className="cartCounterBtn cartCountervalue" >{item.count}</Button>
                                         <Button className="cartCounterBtn" onClick={() => { handelCartCountUpdate("Inc", item.title) }}>+</Button>
                                     </div>
                                 </Card>
@@ -56,7 +56,7 @@ export default function Cart() {
                         }) : ""}
 
                     </Col>
-                    <Col xs={6} md={4} lg={4} xl={4}>
+                    <Col xs={12} md={4} lg={4} xl={4}>
                         <Card className="cardOrderDetails">
                             <Card.Body className="cartMealBody">
                                 {cartListData.length > 0 ? cartListData.map((item) => {
@@ -80,7 +80,7 @@ export default function Cart() {
             <div>
                 
                 <Row className="orderMealRow">
-                    <h1>No Items Added to Cart ..! </h1>  
+                    <h1>Your cart is empty. Kindly add items to continue shopping</h1>  
                     <Col className="orderCol" xs={12} md={8} lg={8} xl={8}>
                         {orderLists.length > 0 ? orderLists.map((item) => {
                             return (<>

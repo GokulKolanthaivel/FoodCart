@@ -10,7 +10,6 @@
 }
 
 .cartMealCard{
-    padding: 10px;
     padding: 0px 40px;
     display: flex !important;
     flex-direction: row !important;
@@ -48,12 +47,8 @@
     float: right;
 }
 
-.orderDetails{
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* align-items: center; */
-    /* justify-content: space-between; */
-}
+
+
 
 .totalAmount{
     float: right;
@@ -98,4 +93,45 @@
 }
 .orderElementMargin{
     margin-left: 20px ;
+}
+
+
+@media(max-width: 800px){
+    .cartMealRow{
+        padding: 10px 10px;
+    }
+    .cartMealCard{
+        height: 70vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .cartMealCard{
+        padding: 0px 10px;
+    }
+    .cartMealImage{
+        height: 30px !important;
+        width: 30px !important;
+     }
+     .card-title{
+        font-size: 15px !important;
+     }
+     .card-subtitle{
+        font-size: 12px !important;
+     }
+     .cartCounterBtn{
+        font-size: 12px !important;
+        font-weight: 700 !important;
+     }
+     .cartOrderCol{
+        height: auto !important;
+     }
+
+
+     .orderMealRow{
+        margin: 10px !important;
+      }
+
+    .orderMealCard{
+        padding: 10px 10px;
+    }
 }

@@ -18,6 +18,7 @@
 }
 .categoriesImage{
     padding: 40px !important;
+    border-radius: 70px !important;
 
 }
 .titlePadding{
@@ -77,4 +78,32 @@
     margin-right: 10px !important;
     border-radius: 10px !important;
     cursor: default !important;
+}
+
+
+
+@media(max-width: 800px){
+
+    .selectedMealCard{
+        padding: 0px !important;
+    }
+    .categoriesImage{
+        padding: 20px !important;
+        border-radius: 40px !important;
+    }
+    .addtoCardButton{
+        width: 100%  !important;
+        cursor: pointer;
+        font-size: 15px !important;
+    }
+
+    .titlePadding{
+        padding: 5px 0px ;
+    }
+    .categoriesColSingle{
+        padding: 10px 35px !important;
+    }
+    .categoriesCol{
+        padding: 10px 35px !important;
+    }
 }
